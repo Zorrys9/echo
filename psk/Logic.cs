@@ -25,7 +25,7 @@ namespace psk
                             nam = itm.name;
 
                         }
-                        else if (itm.name != item && q == false)
+                        else if (itm.name != item && !q)
                         {
                             q = false;
 
