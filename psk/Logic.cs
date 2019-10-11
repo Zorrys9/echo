@@ -31,7 +31,7 @@ namespace psk
 
                         }
                     }
-                    if (q == true)
+                    if (q)
                     {
                         CurrentList.Find(t => t.name == nam).count++;
                     }
