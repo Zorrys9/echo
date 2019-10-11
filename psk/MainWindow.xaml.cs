@@ -19,107 +19,31 @@ namespace psk
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
+
     public partial class MainWindow : Window
     {
-        List<MyDataType> txtList = new List<MyDataType>();
-        List<MyDataType> txtList2 = new List<MyDataType>();
-        bool q = false;
-        int count =99999999;
-        int count1 = 0;
-        public class MyDataType
-        {
-            public char name;
-            public int count;
-        }
-    
+        List<MyList> txtList = new List<MyList>();
+        List<MyList> txtList2 = new List<MyList>();
         public MainWindow()
         {
             InitializeComponent();
-            txtList.Add(new MyDataType() { name = ' ', count = 1 });
         }
+
+
    
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Count_Click(object sender, RoutedEventArgs e)
         {
-            char nam = ' ';
-            foreach (var item in text.Text)
+            try
             {
-                q = false;
-                foreach(var itm in txtList)
-                {
-                    if(itm.name == item)
-                    {
-                        q = true;
-                        nam = itm.name;
-                      
-                    }
-                    else if(itm.name != item && q == false)
-                    {
-                        q = false;
-                       
-                    }
-                }
-                if(q == true)
-                {
-                    txtList.Find(t => t.name == nam).count++;
-                }
-                else
-                {
-                    txtList.Add(new MyDataType() { name = item, count = 1 });
-                }
+                Logic.Counting(txtList, text);
+                Logic.Counting(txtList2, sl);
+                Logic.Count(txtList2, txtList, sl);
             }
-            foreach (var item in sl.Text)
+            catch (Exception ex)
             {
-                q = false;
-                foreach (var itm in txtList2)
-                {
-                    if (itm.name == item)
-                    {
-                        q = true;
-                        nam = itm.name;
-
-                    }
-                    else if (itm.name != item && q == false)
-                    {
-                        q = false;
-
-                    }
-                }
-                if (q == true)
-                {
-                    txtList2.Find(t => t.name == nam).count++;
-                }
-                else
-                {
-                    txtList2.Add(new MyDataType() { name = item, count = 1 });
-                }
+                MessageBox.Show("Ошибка:" + ex.Message);
             }
 
-            foreach(var itm2 in txtList2)
-            {
-                foreach(var itm in txtList)
-                {
-                    if (itm.name == itm2.name)
-                    {
-                        count1 = itm.count / itm2.count;
-                        if (count1 < count) { count = count1; }
-
-                    }
-                    else if (itm.name != itm2.name && q == false)
-                    {
-   
-
-                    }
-                }
-            }
-            MessageBox.Show(count.ToString());
-            }
-        
-
-            //text.Text = "";
-            //foreach(var itm in txtList)
-            //{
-            //    text.Text += itm.name + " " + itm.count + "\n";
-            //}
         }
     }
-
+}

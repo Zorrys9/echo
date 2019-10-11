@@ -7,9 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="text" HorizontalAlignment="Left" Height="174" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="762"/>
-        <TextBox x:Name="sl" HorizontalAlignment="Left" Height="34" Margin="10,208,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="762"/>
-        <Button Content="Button" HorizontalAlignment="Left" Height="61" Margin="625,349,0,0" VerticalAlignment="Top" Width="159" Click="Button_Click"/>
+        <TextBox x:Name="text" HorizontalAlignment="Left" Height="221" Margin="10,43,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="762"/>
+        <TextBox x:Name="sl" HorizontalAlignment="Left" Height="29" Margin="10,314,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="762" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.066"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button Content="Подсчитать" HorizontalAlignment="Left" Height="61" Margin="625,349,0,0" VerticalAlignment="Top" Width="159" Click="Count_Click"/>
+        <Label Content="Текст" HorizontalAlignment="Left" Height="32" Margin="10,6,0,0" VerticalAlignment="Top" Width="55" FontSize="16"/>
+        <Label Content="Фраза" HorizontalAlignment="Left" Height="32" Margin="10,269,0,0" VerticalAlignment="Top" Width="55" FontSize="16"/>
 
     </Grid>
 </Window>
