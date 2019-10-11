@@ -1,0 +1,15 @@
+C:\Users\Марина\source\repos\psk\psk\obj\Debug\psk.csprojAssemblyReference.cache
+C:\Users\Марина\source\repos\psk\psk\obj\Debug\MainWindow.g.cs
+C:\Users\Марина\source\repos\psk\psk\obj\Debug\App.g.cs
+C:\Users\Марина\source\repos\psk\psk\obj\Debug\psk_MarkupCompile.cache
+C:\Users\Марина\source\repos\psk\psk\obj\Debug\psk_MarkupCompile.lref
+C:\Users\Марина\source\repos\psk\psk\bin\Debug\psk.exe.config
+C:\Users\Марина\source\repos\psk\psk\bin\Debug\psk.exe
+C:\Users\Марина\source\repos\psk\psk\bin\Debug\psk.pdb
+C:\Users\Марина\source\repos\psk\psk\obj\Debug\MainWindow.baml
+C:\Users\Марина\source\repos\psk\psk\obj\Debug\psk.g.resources
+C:\Users\Марина\source\repos\psk\psk\obj\Debug\psk.Properties.Resources.resources
+C:\Users\Марина\source\repos\psk\psk\obj\Debug\psk.csproj.GenerateResource.cache
+C:\Users\Марина\source\repos\psk\psk\obj\Debug\psk.csproj.CoreCompileInputs.cache
+C:\Users\Марина\source\repos\psk\psk\obj\Debug\psk.exe
+C:\Users\Марина\source\repos\psk\psk\obj\Debug\psk.pdb
